@@ -7,10 +7,10 @@ function App() {
       <section id="center">
         <div>
           <h1>Maha Zayed</h1>
-          <h2>Frontend Engineer & Digital Artist</h2>
-          <p>Frontend Engineer · React · TypeScript · Full-Stack</p>
+          <h2>Software Engineer & Digital Artist</h2>
+          <p>Frontend · Backend · React · TypeScript · Javascript</p>
           <p>
-            I'm a frontend engineer and digital artist with a passion for creating functional web applications and digital art
+            I'm a software engineer and digital artist with a passion for creating functional web applications and digital art.
           </p>
           <p>I'm on the hunt for a new challenge. Let's chat!</p>
         </div>
