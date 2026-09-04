@@ -7,12 +7,9 @@ const Home = () => {
         <Header />
          <div className="container">
         <section>
-          <h1>Hi. I'm Maha.</h1>
-          <h1>Software Engineer &</h1>
-          <h1>Digital Artist.</h1>
-        </section>
-        <section>
-          <div>this is where my image is going to go</div>
+          <h1 className="home-title">Hi. I'm Maha.</h1>
+          <h1 className="home-subtitle">Software Engineer</h1>
+          <h1 className="home-subtitle__last">& Digital Artist.</h1>
         </section>
         </div>
         </>
