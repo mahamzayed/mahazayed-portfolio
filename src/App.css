@@ -183,3 +183,12 @@
     border-right-color: var(--border);
   }
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+  gap: 100px;
+}

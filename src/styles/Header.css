@@ -1,0 +1,24 @@
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+
+  a {
+    text-decoration: none;
+    color: var(--ink);
+  }
+
+  .header-nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+}
+

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maha — plum + magenta</title>
+    <style>
+      :root {
+        --ink: #211134;
+        --accent: #822d5e;
+        --muted: #c6c0c5;
+        --bg: #e6e1e0;
+        --white: #ffffff;
+        --sans: "Segoe UI", system-ui, sans-serif;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: var(--sans);
+        background: var(--bg);
+        color: var(--ink);
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 22px;
+        padding: 28px 16px 12px;
+        font-size: 13px;
+        letter-spacing: 0.04em;
+      }
+      nav span.active {
+        background: var(--white);
+        padding: 6px 14px;
+        border-radius: 999px;
+      }
+      h1 {
+        text-align: center;
+        margin: 12px 0 36px;
+        font-size: clamp(48px, 8vw, 80px);
+        letter-spacing: -0.05em;
+        font-weight: 700;
+      }
+      .hero {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 24px;
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 40px;
+        align-items: center;
+      }
+      @media (max-width: 700px) {
+        .hero { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+      }
+      .arch {
+        width: 220px;
+        height: 300px;
+        background: var(--muted);
+        border-radius: 110px 110px 18px 18px;
+      }
+      .copy h2 {
+        margin: 0 0 14px;
+        font-size: 26px;
+        letter-spacing: -0.03em;
+        line-height: 1.2;
+      }
+      .copy p {
+        margin: 0 0 10px;
+        font-size: 15px;
+        line-height: 1.5;
+        color: color-mix(in srgb, var(--ink) 72%, var(--bg));
+      }
+      .pills {
+        max-width: 980px;
+        margin: 48px auto 0;
+        padding: 0 24px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+      }
+      .pill {
+        background: var(--accent);
+        color: var(--white);
+        border-radius: 999px;
+        padding: 12px 18px;
+        font-size: 13px;
+      }
+      .swatches {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 8px;
+        max-width: 720px;
+        margin: 0 auto 56px;
+        padding: 0 24px;
+      }
+      .swatch {
+        min-height: 80px;
+        border-radius: 14px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-size: 11px;
+        outline: 1px solid rgba(33, 17, 52, 0.12);
+      }
+      .swatch.dark { color: var(--white); }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <span>Work</span>
+      <span class="active">About</span>
+      <span>Art</span>
+      <span>Notes</span>
+      <span>Contact</span>
+    </nav>
+    <h1>I’m Maha.</h1>
+    <section class="hero">
+      <div class="arch" aria-hidden="true"></div>
+      <div class="copy">
+        <h2>I’m a software engineer &amp; digital artist, currently based in New York.</h2>
+        <p>I build calm, useful products in React and TypeScript — and I make art on the side.</p>
+        <p>I’m on the hunt for a new challenge. Let’s chat.</p>
+      </div>
+    </section>
+    <div class="pills">
+      <div class="pill">Alma | Software Engineer</div>
+      <div class="pill">Open to work</div>
+    </div>
+    <div class="swatches">
+      <div class="swatch dark" style="background:#211134">ink<br />#211134</div>
+      <div class="swatch dark" style="background:#822d5e">accent<br />#822D5E</div>
+      <div class="swatch" style="background:#c6c0c5;color:#211134">muted<br />#C6C0C5</div>
+      <div class="swatch" style="background:#e6e1e0;color:#211134">page<br />#E6E1E0</div>
+      <div class="swatch" style="background:#ffffff;color:#211134">white<br />#FFFFFF</div>
+    </div>
+  </body>
+</html>
